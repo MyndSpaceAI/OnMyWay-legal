@@ -1,0 +1,87 @@
+:root {
+  --onyx: #0b0b0d;
+  --card: #1b1915;
+  --raised: #25221c;
+  --ivory: #f4efe6;
+  --mist: #a8a193;
+  --gold: #d4af37;
+  --gold-light: #f6e3a1;
+  --gold-deep: #a8832a;
+  --foil: linear-gradient(135deg, #f6e3a1 0%, #d4af37 38%, #a8832a 72%, #e6cc7a 100%);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: radial-gradient(ellipse at top, rgba(212, 175, 55, 0.16), transparent 60%), var(--onyx);
+  background-color: var(--onyx);
+  color: var(--ivory);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+main { max-width: 760px; margin: 0 auto; padding: 48px 16px 80px; }
+
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+
+header img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 8px 28px rgba(212, 175, 55, 0.25); }
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+h1 { font-size: 34px; }
+
+h2 { font-size: 24px; margin-top: 40px; margin-bottom: 8px; }
+
+h3 { font-size: 19px; margin-top: 24px; margin-bottom: 4px; }
+
+.gold { background: var(--foil); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+p, li { color: var(--ivory); }
+
+.muted { color: var(--mist); }
+
+a { color: var(--gold-light); }
+
+.card {
+  background: linear-gradient(135deg, var(--raised), var(--card));
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 24px;
+  padding: 20px 22px;
+  margin: 20px 0;
+}
+
+.pills { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 8px; }
+
+.pill {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  color: var(--gold-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.pill.primary { background: var(--foil); color: var(--onyx); border: none; }
+
+footer { margin-top: 56px; color: var(--mist); font-size: 14px; }
+
+ul { padding-left: 22px; }
