@@ -36,32 +36,34 @@
 
     <h2>What stays on your iPhone</h2>
     <ul>
-      <li><strong>People</strong> you add with the system contact picker: their name, phone number and contact photo. The app only sees the contacts you pick, not your whole address book.</li>
-      <li><strong>Places</strong> you add: name, address and map coordinates.</li>
+      <li><strong>People</strong> you add: their name, phone number, email address and contact photo. You can pick them with the system contact picker, which only shares the contacts you pick, or, if you allow access to Contacts, from the app's own list with Favorites and All Contacts. That list is read on your iPhone only; if you share only some contacts with the app, it sees only those. Contacts you mark as favorites are remembered on your iPhone.</li>
+      <li><strong>Places</strong> you add: name, address and map coordinates, and which place a trip starts from (for “When I leave”).</li>
       <li><strong>Your messages, settings and history</strong> of what was sent.</li>
-      <li><strong>Access tokens</strong> you enter for sending services (Telegram, Twilio, ntfy, webhook) are stored in the iOS Keychain.</li>
+      <li><strong>Access tokens and passwords</strong> you enter for sending services (such as Telegram, Twilio, ntfy, WhatsApp, your Signal or BlueBubbles server, or a webhook) are stored in the iOS Keychain.</li>
     </ul>
     <p>This information is stored only on your device. We have no server and receive no copies.</p>
 
     <h2>Location</h2>
-    <p>With your permission, the app uses your location to calculate your arrival time (ETA) and, during a trip, to notice when you have arrived or are running late. Route and travel-time calculations are done by Apple Maps (MapKit) under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Your location is never sent to us. Messages contain your arrival time, not your position; a push notification may contain a map link to the destination you chose.</p>
+    <p>With your permission, the app uses your location to calculate your arrival time (ETA) and, during a trip, to notice when you have arrived or are running late. If you use “When I leave” (for example, Home starts when you leave Work), the app asks for “Always” access so iOS can tell it when you leave that place, even when the app is closed. iOS watches these places on your iPhone; the app does not record your route. Route and travel-time calculations are done by Apple Maps (MapKit) under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Your location is never sent to us. Messages contain your arrival time, not your position; a push notification may contain a map link to the destination you chose.</p>
+    <p><strong>Live ETA link</strong> (optional, off by default): the app adds a private link to your message and, during the trip, posts your updated arrival time and the destination name to a randomly named <a href="https://ntfy.sh/docs/privacy/">ntfy</a> topic (ntfy.sh or your own server). Anyone with the link can see these updates. They never include your position, and they stop when you arrive.</p>
 
     <h2>Sending messages</h2>
-    <p>When you send a message, its text and the recipients' details (name and phone number, or their connection with your Telegram bot or push topic) go only to the app or service you chose:</p>
+    <p>When you send a message, its text and the recipients' details (such as name, phone number or email address, or their connection with your Telegram bot, Signal group or push topic) go only to the app or service you chose:</p>
     <ul>
-      <li><strong>On your iPhone:</strong> Messages, WhatsApp, Signal or Telegram open with the message ready, and you send it yourself. Those apps process it under their own privacy policies.</li>
-      <li><strong>Automatically</strong> (CarPlay, Siri, Ride Mode), through the method you set up: your own <a href="https://telegram.org/privacy">Telegram</a> bot, a push notification through <a href="https://ntfy.sh/docs/privacy/">ntfy</a> (ntfy.sh or your own server), a text message through your own <a href="https://www.twilio.com/legal/privacy">Twilio</a> account, or a webhook address you entered.</li>
+      <li><strong>On your iPhone:</strong> Messages, WhatsApp, Signal, Telegram or Mail open with the message ready, and you send it yourself. Those apps process it under their own privacy policies.</li>
+      <li><strong>With the OMW shortcuts</strong> you install in the Shortcuts app: the message goes to the shortcut, which sends it from your own account in Messages, WhatsApp, Signal, Telegram or Mail.</li>
+      <li><strong>Automatically</strong> (CarPlay, Siri, Ride Mode and automations), through the method you set up: your own <a href="https://telegram.org/privacy">Telegram</a> bot or Telegram Business connection, a push notification through <a href="https://ntfy.sh/docs/privacy/">ntfy</a> (ntfy.sh or your own server), a text message through your own <a href="https://www.twilio.com/legal/privacy">Twilio</a> account, WhatsApp through your business account on Meta's WhatsApp Cloud API, Signal through your own signal-cli server, iMessage through BlueBubbles on your own Mac, or a webhook address you entered.</li>
     </ul>
     <p>These services are chosen and configured by you, and they process messages under their own terms. We do not operate them and do not receive the messages.</p>
 
     <h2>Siri and Shortcuts</h2>
-    <p>If you use Siri or the Shortcuts app with On My Way, your requests are handled by Apple under Apple's privacy policy.</p>
+    <p>If you use Siri or the Shortcuts app with On My Way (including the OMW shortcuts, and Siri reading your message back), your requests are handled by Apple under Apple's privacy policy.</p>
 
     <h2>Children</h2>
     <p>The app is suitable for all ages and collects no personal data from anyone, including children.</p>
 
     <h2>Your choices</h2>
-    <p>You can change or remove people, places, messages and history at any time in the app, turn off location in iOS Settings, or delete the app to remove all of its data from your iPhone.</p>
+    <p>You can change or remove people, places, messages and history at any time in the app, turn off access to Contacts or location in iOS Settings, or delete the app to remove all of its data from your iPhone.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the new version will be published on this page with a new date.</p>
@@ -84,32 +86,34 @@
 
     <h2>Wat op je iPhone blijft</h2>
     <ul>
-      <li><strong>Mensen</strong> die je toevoegt via de systeemkiezer voor contacten: naam, telefoonnummer en contactfoto. De app ziet alleen de contacten die jij kiest, niet je hele adresboek.</li>
-      <li><strong>Plaatsen</strong> die je toevoegt: naam, adres en kaartcoördinaten.</li>
+      <li><strong>Mensen</strong> die je toevoegt: naam, telefoonnummer, e-mailadres en contactfoto. Je kiest ze met de systeemkiezer voor contacten, die alleen de gekozen contacten deelt, of, als je toegang tot Contacten geeft, uit de eigen lijst van de app met Favorieten en Alle contacten. Die lijst wordt alleen op je iPhone gelezen; deel je maar een deel van je contacten met de app, dan ziet de app alleen die. Contacten die je als favoriet markeert, worden op je iPhone onthouden.</li>
+      <li><strong>Plaatsen</strong> die je toevoegt: naam, adres en kaartcoördinaten, en vanaf welke plaats een rit begint (voor „When I leave”).</li>
       <li><strong>Je berichten, instellingen en geschiedenis</strong> van wat er verstuurd is.</li>
-      <li><strong>Toegangstokens</strong> voor verzenddiensten (Telegram, Twilio, ntfy, webhook) worden bewaard in de iOS-sleutelhanger.</li>
+      <li><strong>Toegangstokens en wachtwoorden</strong> voor verzenddiensten (zoals Telegram, Twilio, ntfy, WhatsApp, je Signal- of BlueBubbles-server, of een webhook) worden bewaard in de iOS-sleutelhanger.</li>
     </ul>
     <p>Deze gegevens staan alleen op je apparaat. Wij hebben geen server en ontvangen geen kopieën.</p>
 
     <h2>Locatie</h2>
-    <p>Met je toestemming gebruikt de app je locatie om je aankomsttijd te berekenen en om tijdens een rit te merken dat je bent aangekomen of later bent. Route- en reistijdberekeningen gebeuren door Apple Kaarten (MapKit) onder het <a href="https://www.apple.com/nl/legal/privacy/">privacybeleid van Apple</a>. Je locatie wordt nooit naar ons gestuurd. Berichten bevatten je aankomsttijd, niet je positie; een pushmelding kan een kaartlink bevatten naar de bestemming die jij koos.</p>
+    <p>Met je toestemming gebruikt de app je locatie om je aankomsttijd te berekenen en om tijdens een rit te merken dat je bent aangekomen of later bent. Gebruik je „When I leave” (bijvoorbeeld Thuis zodra je van Werk vertrekt), dan vraagt de app om toegang „Altijd”, zodat iOS de app kan laten weten dat je die plaats verlaat, ook als de app gesloten is. iOS houdt deze plaatsen op je iPhone in de gaten; de app legt je route niet vast. Route- en reistijdberekeningen gebeuren door Apple Kaarten (MapKit) onder het <a href="https://www.apple.com/nl/legal/privacy/">privacybeleid van Apple</a>. Je locatie wordt nooit naar ons gestuurd. Berichten bevatten je aankomsttijd, niet je positie; een pushmelding kan een kaartlink bevatten naar de bestemming die jij koos.</p>
+    <p><strong>Live aankomsttijd-link</strong> (optioneel, standaard uit): de app zet een privélink in je bericht en stuurt tijdens de rit je bijgewerkte aankomsttijd en de naam van je bestemming naar een willekeurig genoemd <a href="https://ntfy.sh/docs/privacy/">ntfy</a>-kanaal (ntfy.sh of je eigen server). Iedereen met de link kan deze updates zien. Ze bevatten nooit je positie en stoppen als je bent aangekomen.</p>
 
     <h2>Berichten versturen</h2>
-    <p>Als je een bericht verstuurt, gaan de tekst en de gegevens van de ontvangers (naam en telefoonnummer, of hun koppeling met jouw Telegram-bot of pushkanaal) alleen naar de app of dienst die jij kiest:</p>
+    <p>Als je een bericht verstuurt, gaan de tekst en de gegevens van de ontvangers (zoals naam, telefoonnummer of e-mailadres, of hun koppeling met jouw Telegram-bot, Signal-groep of pushkanaal) alleen naar de app of dienst die jij kiest:</p>
     <ul>
-      <li><strong>Op je iPhone:</strong> Berichten, WhatsApp, Signal of Telegram openen met het bericht klaar, en jij verstuurt het zelf. Die apps verwerken het volgens hun eigen privacybeleid.</li>
-      <li><strong>Automatisch</strong> (CarPlay, Siri, Rijmodus), via de methode die jij instelt: je eigen <a href="https://telegram.org/privacy">Telegram</a>-bot, een pushmelding via <a href="https://ntfy.sh/docs/privacy/">ntfy</a> (ntfy.sh of je eigen server), een sms via je eigen <a href="https://www.twilio.com/legal/privacy">Twilio</a>-account, of een webhookadres dat jij invult.</li>
+      <li><strong>Op je iPhone:</strong> Berichten, WhatsApp, Signal, Telegram of Mail openen met het bericht klaar, en jij verstuurt het zelf. Die apps verwerken het volgens hun eigen privacybeleid.</li>
+      <li><strong>Met de OMW-opdrachten</strong> die je in de Opdrachten-app installeert: het bericht gaat naar de opdracht, die het vanaf je eigen account verstuurt in Berichten, WhatsApp, Signal, Telegram of Mail.</li>
+      <li><strong>Automatisch</strong> (CarPlay, Siri, Rijmodus en automatiseringen), via de methode die jij instelt: je eigen <a href="https://telegram.org/privacy">Telegram</a>-bot of Telegram Business-koppeling, een pushmelding via <a href="https://ntfy.sh/docs/privacy/">ntfy</a> (ntfy.sh of je eigen server), een sms via je eigen <a href="https://www.twilio.com/legal/privacy">Twilio</a>-account, WhatsApp via je zakelijke account op de WhatsApp Cloud API van Meta, Signal via je eigen signal-cli-server, iMessage via BlueBubbles op je eigen Mac, of een webhookadres dat jij invult.</li>
     </ul>
     <p>Deze diensten worden door jou gekozen en ingesteld en verwerken berichten volgens hun eigen voorwaarden. Wij beheren ze niet en ontvangen de berichten niet.</p>
 
     <h2>Siri en Opdrachten</h2>
-    <p>Als je Siri of de Opdrachten-app met On My Way gebruikt, worden je verzoeken door Apple verwerkt volgens het privacybeleid van Apple.</p>
+    <p>Als je Siri of de Opdrachten-app met On My Way gebruikt (ook de OMW-opdrachten, en Siri die je bericht voorleest), worden je verzoeken door Apple verwerkt volgens het privacybeleid van Apple.</p>
 
     <h2>Kinderen</h2>
     <p>De app is geschikt voor alle leeftijden en verzamelt van niemand persoonsgegevens, ook niet van kinderen.</p>
 
     <h2>Jouw keuzes</h2>
-    <p>Je kunt mensen, plaatsen, berichten en geschiedenis altijd wijzigen of verwijderen in de app, locatie uitzetten in de iOS-instellingen, of de app verwijderen om al zijn gegevens van je iPhone te wissen.</p>
+    <p>Je kunt mensen, plaatsen, berichten en geschiedenis altijd wijzigen of verwijderen in de app, toegang tot Contacten of locatie uitzetten in de iOS-instellingen, of de app verwijderen om al zijn gegevens van je iPhone te wissen.</p>
 
     <h2>Wijzigingen</h2>
     <p>Als dit beleid verandert, wordt de nieuwe versie met een nieuwe datum op deze pagina gepubliceerd.</p>
