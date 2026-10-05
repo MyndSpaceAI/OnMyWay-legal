@@ -24,11 +24,11 @@
   </div>
 
   <section id="en">
-    <p class="muted">Last updated: 5 October 2026</p>
+    <p class="muted">Last updated: 6 October 2026</p>
 
     <div class="card">
       <h3 class="gold">In short</h3>
-      <p>On My Way does not collect your data. There is no account, no tracking, no advertising and no analytics. Your people, places and messages stay on your iPhone. A message only leaves your phone when you send it, and then only to the app or service you chose.</p>
+      <p>On My Way collects almost nothing. There is no account, no tracking, no advertising and no analytics. Your people, places and messages stay on your iPhone. A message only leaves your phone when you send it, and then only to the app or service you chose. The one exception is <a href="#following">Following</a>: those updates go through the app's iCloud database, end-to-end encrypted, so we can't read them.</p>
     </div>
 
     <h2>Who we are</h2>
@@ -41,7 +41,7 @@
       <li><strong>Your messages, settings and history</strong> of what was sent.</li>
       <li><strong>Access tokens and passwords</strong> you enter for sending services (such as Telegram, Twilio, ntfy, WhatsApp, your Signal or BlueBubbles server, or a webhook) are stored in the iOS Keychain.</li>
     </ul>
-    <p>This information is stored only on your device. We have no server and receive no copies.</p>
+    <p>This information is stored only on your device. We have no server of our own and receive no copies.</p>
 
     <h2>Location</h2>
     <p>With your permission, the app uses your location to calculate your arrival time (ETA) and, during a trip, to notice when you have arrived or are running late. If you use “When I leave” (for example, Home starts when you leave Work), the app asks for “Always” access so iOS can tell it when you leave that place, even when the app is closed. iOS watches these places on your iPhone; the app does not record your route. Route and travel-time calculations are done by Apple Maps (MapKit) under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Your location is never sent to us. Messages contain your arrival time, not your position; a push notification may contain a map link to the destination you chose.</p>
@@ -56,14 +56,24 @@
     </ul>
     <p>These services are chosen and configured by you, and they process messages under their own terms. We do not operate them and do not receive the messages.</p>
 
+    <h2 id="following">Following</h2>
+    <p>Following is optional. It lets the people you invite get your updates as notifications in their own On My Way app.</p>
+    <ul>
+      <li><strong>The invite link</strong> you share contains a random inbox code and a secret key. Anyone who has the link can receive your updates, so only share it with people you trust.</li>
+      <li><strong>Each update</strong> (your name, the message, its label such as “Home” or “Running late”, and your arrival time) is encrypted on your iPhone with that key and stored in the app's iCloud database (CloudKit, run by Apple). Only phones that have the key can open it; we can't. Updates never contain your position.</li>
+      <li><strong>What we can see:</strong> with each update, iCloud stores the inbox code, the time it was saved and an identifier that iCloud assigns to your iCloud account for this app. That identifier doesn't contain your name, email address or phone number. We use it only to deliver updates, never for tracking or advertising.</li>
+      <li><strong>Receiving:</strong> when you follow someone, iCloud sends new updates for that inbox to your iPhone, and On My Way decrypts them on your iPhone. You need to be signed in to iCloud.</li>
+    </ul>
+    <p>Encrypted updates are kept in the iCloud database; they can only be read with the key from your invite. To stop receiving someone's updates, unfollow them in the app.</p>
+
     <h2>Siri and Shortcuts</h2>
     <p>If you use Siri or the Shortcuts app with On My Way (including the OMW shortcuts, and Siri reading your message back), your requests are handled by Apple under Apple's privacy policy.</p>
 
     <h2>Children</h2>
-    <p>The app is suitable for all ages and collects no personal data from anyone, including children.</p>
+    <p>The app is suitable for all ages. Apart from the iCloud identifier described under <a href="#following">Following</a>, it collects no personal data from anyone, including children.</p>
 
     <h2>Your choices</h2>
-    <p>You can change or remove people, places, messages and history at any time in the app, turn off access to Contacts or location in iOS Settings, or delete the app to remove all of its data from your iPhone.</p>
+    <p>You can change or remove people, places, messages and history at any time in the app, turn off access to Contacts or location in iOS Settings, or delete the app to remove all of its data from your iPhone. To stop receiving someone's updates, unfollow them under Following.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, the new version will be published on this page with a new date.</p>
@@ -74,11 +84,11 @@
 
   <section id="nl">
     <h1 style="margin-top:72px">Privacybeleid</h1>
-    <p class="muted">Laatst bijgewerkt: 5 oktober 2026</p>
+    <p class="muted">Laatst bijgewerkt: 6 oktober 2026</p>
 
     <div class="card">
       <h3 class="gold">In het kort</h3>
-      <p>On My Way verzamelt je gegevens niet. Er is geen account, geen tracking, geen advertenties en geen analytics. Je mensen, plaatsen en berichten blijven op je iPhone. Een bericht verlaat je telefoon alleen als je het verstuurt, en dan alleen naar de app of dienst die jij kiest.</p>
+      <p>On My Way verzamelt bijna niets. Er is geen account, geen tracking, geen advertenties en geen analytics. Je mensen, plaatsen en berichten blijven op je iPhone. Een bericht verlaat je telefoon alleen als je het verstuurt, en dan alleen naar de app of dienst die jij kiest. De enige uitzondering is <a href="#following-nl">Following</a> (iemand volgen): die updates gaan via de iCloud-database van de app, end-to-end versleuteld, zodat wij ze niet kunnen lezen.</p>
     </div>
 
     <h2>Wie zijn wij</h2>
@@ -91,7 +101,7 @@
       <li><strong>Je berichten, instellingen en geschiedenis</strong> van wat er verstuurd is.</li>
       <li><strong>Toegangstokens en wachtwoorden</strong> voor verzenddiensten (zoals Telegram, Twilio, ntfy, WhatsApp, je Signal- of BlueBubbles-server, of een webhook) worden bewaard in de iOS-sleutelhanger.</li>
     </ul>
-    <p>Deze gegevens staan alleen op je apparaat. Wij hebben geen server en ontvangen geen kopieën.</p>
+    <p>Deze gegevens staan alleen op je apparaat. Wij hebben geen eigen server en ontvangen geen kopieën.</p>
 
     <h2>Locatie</h2>
     <p>Met je toestemming gebruikt de app je locatie om je aankomsttijd te berekenen en om tijdens een rit te merken dat je bent aangekomen of later bent. Gebruik je „When I leave” (bijvoorbeeld Thuis zodra je van Werk vertrekt), dan vraagt de app om toegang „Altijd”, zodat iOS de app kan laten weten dat je die plaats verlaat, ook als de app gesloten is. iOS houdt deze plaatsen op je iPhone in de gaten; de app legt je route niet vast. Route- en reistijdberekeningen gebeuren door Apple Kaarten (MapKit) onder het <a href="https://www.apple.com/nl/legal/privacy/">privacybeleid van Apple</a>. Je locatie wordt nooit naar ons gestuurd. Berichten bevatten je aankomsttijd, niet je positie; een pushmelding kan een kaartlink bevatten naar de bestemming die jij koos.</p>
@@ -106,14 +116,24 @@
     </ul>
     <p>Deze diensten worden door jou gekozen en ingesteld en verwerken berichten volgens hun eigen voorwaarden. Wij beheren ze niet en ontvangen de berichten niet.</p>
 
+    <h2 id="following-nl">Following (volgen)</h2>
+    <p>Following is optioneel. Mensen die je uitnodigt krijgen je updates dan als melding in hun eigen On My Way-app.</p>
+    <ul>
+      <li><strong>De uitnodigingslink</strong> die je deelt bevat een willekeurige inboxcode en een geheime sleutel. Iedereen met de link kan je updates ontvangen, dus deel hem alleen met mensen die je vertrouwt.</li>
+      <li><strong>Elke update</strong> (je naam, het bericht, het label zoals „Home” of „Running late”, en je aankomsttijd) wordt op je iPhone versleuteld met die sleutel en bewaard in de iCloud-database van de app (CloudKit, beheerd door Apple). Alleen telefoons met de sleutel kunnen hem openen; wij niet. Updates bevatten nooit je positie.</li>
+      <li><strong>Wat wij kunnen zien:</strong> bij elke update bewaart iCloud de inboxcode, het tijdstip en een kenmerk dat iCloud voor deze app aan je iCloud-account geeft. Dat kenmerk bevat niet je naam, e-mailadres of telefoonnummer. We gebruiken het alleen om updates te bezorgen, nooit voor tracking of advertenties.</li>
+      <li><strong>Ontvangen:</strong> als je iemand volgt, stuurt iCloud nieuwe updates voor die inbox naar je iPhone en ontsleutelt On My Way ze op je iPhone. Je moet ingelogd zijn bij iCloud.</li>
+    </ul>
+    <p>Versleutelde updates blijven bewaard in de iCloud-database; ze zijn alleen te lezen met de sleutel uit je uitnodiging. Wil je iemands updates niet meer ontvangen, ontvolg die persoon dan in de app.</p>
+
     <h2>Siri en Opdrachten</h2>
     <p>Als je Siri of de Opdrachten-app met On My Way gebruikt (ook de OMW-opdrachten, en Siri die je bericht voorleest), worden je verzoeken door Apple verwerkt volgens het privacybeleid van Apple.</p>
 
     <h2>Kinderen</h2>
-    <p>De app is geschikt voor alle leeftijden en verzamelt van niemand persoonsgegevens, ook niet van kinderen.</p>
+    <p>De app is geschikt voor alle leeftijden. Behalve het iCloud-kenmerk dat onder <a href="#following-nl">Following</a> staat beschreven, verzamelt de app van niemand persoonsgegevens, ook niet van kinderen.</p>
 
     <h2>Jouw keuzes</h2>
-    <p>Je kunt mensen, plaatsen, berichten en geschiedenis altijd wijzigen of verwijderen in de app, toegang tot Contacten of locatie uitzetten in de iOS-instellingen, of de app verwijderen om al zijn gegevens van je iPhone te wissen.</p>
+    <p>Je kunt mensen, plaatsen, berichten en geschiedenis altijd wijzigen of verwijderen in de app, toegang tot Contacten of locatie uitzetten in de iOS-instellingen, of de app verwijderen om al zijn gegevens van je iPhone te wissen. Wil je iemands updates niet meer ontvangen, ontvolg die persoon dan onder Following.</p>
 
     <h2>Wijzigingen</h2>
     <p>Als dit beleid verandert, wordt de nieuwe versie met een nieuwe datum op deze pagina gepubliceerd.</p>
